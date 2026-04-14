@@ -87,7 +87,7 @@ Full EU AI Act compliance advisor covering risk classification, conformity asses
 
 ---
 
-### 🚗 TISAX *(coming soon)*
+### 🔗 TISAX *(coming soon)*
 
 Automotive industry information security assessment standard covering VDA ISA controls, assessment levels (AL1, AL2, AL3), and ENX exchange process for European automotive supply chain participants.
 
