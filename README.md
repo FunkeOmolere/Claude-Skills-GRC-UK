@@ -1,6 +1,6 @@
-# Claude Skills for GRC UK Edition
+# GRC Compliance Skills · EMEA
 
-Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, and more. Built for UK GRC professionals and powered by Claude Skills.
+Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TISAX, BSI C5, Spain ENS, and more. Built for UK and European GRC professionals and powered by Claude Skills.
 
 ![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -40,7 +40,7 @@ These skills are built for professionals working in UK information security, pri
 
 ## The Problem We Are Solving
 
-Most Claude Skills libraries focus on US frameworks like SOC 2, FedRAMP, and HIPAA. This library fills the gap for UK and European GRC work, covering frameworks that matter to organisations operating across the UK, EU, and European regulated industries:
+Most Claude Skills libraries focus on US frameworks like SOC 2, FedRAMP, and HIPAA. This library fills the gap for GRC professionals across EMEA, covering frameworks that matter to organisations operating across the UK, EU, and wider region:
 
 - **Cyber Essentials / CE+** is the NCSC backed UK government certification scheme
 - **DORA** is the EU Digital Operational Resilience Act for financial entities
