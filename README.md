@@ -1,10 +1,10 @@
-# Claude Skills for GRC UK Edition
+# GRC Compliance Skills · EMEA
 
-Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, and more. Built for UK GRC professionals and powered by Claude Skills.
+Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TISAX, BSI C5, Spain ENS, and more. Built for UK and European GRC professionals and powered by Claude Skills.
 
 ![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Skills 1 of 6](https://img.shields.io/badge/Skills-1%20of%206-green.svg)
+![Skills 2 of 6](https://img.shields.io/badge/Skills-2%20of%206-green.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
 ![Danzell Ready](https://img.shields.io/badge/Cyber%20Essentials-Danzell%20Ready-purple.svg)
 
@@ -40,7 +40,7 @@ These skills are built for professionals working in UK information security, pri
 
 ## The Problem We Are Solving
 
-Most Claude Skills libraries focus on US frameworks like SOC 2, FedRAMP, and HIPAA. This library fills the gap for UK and European GRC work, covering frameworks that matter to organisations operating across the UK, EU, and European regulated industries:
+Most Claude Skills libraries focus on US frameworks like SOC 2, FedRAMP, and HIPAA. This library fills the gap for GRC professionals across EMEA, covering frameworks that matter to organisations operating across the UK, EU, and wider region:
 
 - **Cyber Essentials / CE+** is the NCSC backed UK government certification scheme
 - **DORA** is the EU Digital Operational Resilience Act for financial entities
@@ -73,9 +73,11 @@ Turns Claude into an expert Cyber Essentials and Cyber Essentials Plus complianc
 
 ---
 
-### 🏦 DORA *(coming soon)*
+### 🏦 DORA
 
-Digital Operational Resilience Act covering ICT risk management, incident reporting, third party risk, and TLPT for EU financial entities.
+Turns Claude into an expert DORA compliance advisor for EU financial entities and ICT third party service providers. Covers all five pillars with Article citations, gap assessments, ICT risk management policy drafting, third party risk registers, and cross-framework mapping to NIST CSF 2.0, ISO 27001:2022, ISO 27005, ISO 22301, and NIS2.
+
+**Trigger phrases:** `DORA` `Digital Operational Resilience Act` `ICT risk management` `ICT incident reporting` `TLPT` `Register of Information` `ICT third party risk` `critical ICT provider`
 
 ---
 
@@ -85,7 +87,7 @@ Full EU AI Act compliance advisor covering risk classification, conformity asses
 
 ---
 
-### 🚗 TISAX *(coming soon)*
+### 🔗 TISAX *(coming soon)*
 
 Automotive industry information security assessment standard covering VDA ISA controls, assessment levels (AL1, AL2, AL3), and ENX exchange process for European automotive supply chain participants.
 
@@ -115,6 +117,11 @@ Esquema Nacional de Seguridad covering security categories (Basic, Medium, High)
 | Mapping CE+ controls to ISO 27001:2022 Annex A | Cyber Essentials Plus |
 | Answering a client question about MFA requirements under Danzell | Cyber Essentials Plus |
 | Understanding how CE+ aligns to NIST CSF 2.0 | Cyber Essentials Plus |
+| Running a DORA gap assessment for a financial entity | DORA |
+| Drafting an ICT risk management policy aligned to DORA Article 6 | DORA |
+| Generating a third party ICT risk register aligned to Article 28(3) | DORA |
+| Mapping DORA obligations to ISO 27001:2022 and NIST CSF 2.0 | DORA |
+| Answering a client question about major ICT incident reporting timelines | DORA |
 
 ---
 
@@ -130,6 +137,7 @@ Esquema Nacional de Seguridad covering security categories (Basic, Medium, High)
 | Framework | Version | Download |
 |---|---|---|
 | 🛡️ Cyber Essentials Plus | v1.1.0 (Danzell) | [cyber-essentials-plus.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Cyber%20Essentials%20Plus%20-Claude%20Skill/cyber-essentials-plus.skill) |
+| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
 
 ---
 
@@ -179,6 +187,3 @@ Requirements evolve. Always verify against the latest official publications from
 ---
 
 *Licensed under the [MIT License](LICENSE) · Built by [Funke Omolere](https://github.com/FunkeOmolere)*
-
-
-
