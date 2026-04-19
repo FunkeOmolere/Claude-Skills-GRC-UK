@@ -4,7 +4,7 @@ Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TIS
 
 ![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Skills 2 of 6](https://img.shields.io/badge/Skills-2%20of%206-green.svg)
+![Skills 3 of 6](https://img.shields.io/badge/Skills-3%20of%206-green.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
 ![Danzell Ready](https://img.shields.io/badge/Cyber%20Essentials-Danzell%20Ready-purple.svg)
 
@@ -93,7 +93,7 @@ Automotive industry information security assessment standard covering VDA ISA co
 
 ---
 
-### 🇩🇪 BSI C5 *(coming soon)*
+### 🇩🇪 BSI C5
 
 German Federal Office for Information Security Cloud Computing Compliance Criteria Catalogue covering the 17 topic areas, basic and additional criteria, and audit requirements for cloud providers serving regulated German markets.
 
@@ -137,8 +137,9 @@ Esquema Nacional de Seguridad covering security categories (Basic, Medium, High)
 | Framework | Version | Download |
 |---|---|---|
 | 🛡️ Cyber Essentials Plus | v1.1.0 (Danzell) | [cyber-essentials-plus.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Cyber%20Essentials%20Plus%20-Claude%20Skill/cyber-essentials-plus.skill) |
-| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
-
+| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) 
+|
+| 🇩🇪 BSI C5 | v1.0.0 (C5:2026) | [bsi-c5.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/BSI%20C5%20-%20Claude%20Skill/bsi-c5.skill) |
 ---
 
 ## Danzell Update 27 April 2026
