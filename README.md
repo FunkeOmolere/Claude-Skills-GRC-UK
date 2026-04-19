@@ -4,7 +4,7 @@ Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TIS
 
 ![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Skills 3 of 6](https://img.shields.io/badge/Skills-3%20of%206-green.svg)
+![Skills 2 of 6](https://img.shields.io/badge/Skills-2%20of%206-green.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
 ![Danzell Ready](https://img.shields.io/badge/Cyber%20Essentials-Danzell%20Ready-purple.svg)
 
@@ -87,21 +87,25 @@ Full EU AI Act compliance advisor covering risk classification, conformity asses
 
 ---
 
-### 🔗 TISAX *(coming soon)*
+### 🔗 TISAX
 
-Automotive industry information security assessment standard covering VDA ISA controls, assessment levels (AL1, AL2, AL3), and ENX exchange process for European automotive supply chain participants.
+Expert TISAX compliance advisor for automotive suppliers and OEM service providers. Covers all three assessment levels, VDA ISA 6.0.3 controls, ENX registration, and cross-framework mapping to ISO 27001:2022 and NIS2.
+
+**Trigger phrases:**        
 
 ---
 
-### 🇩🇪 BSI C5
+### 🇩🇪 BSI C5 *(coming soon)*
 
 German Federal Office for Information Security Cloud Computing Compliance Criteria Catalogue covering the 17 topic areas, basic and additional criteria, and audit requirements for cloud providers serving regulated German markets.
 
 ---
 
-### 🇪🇸 Spain ENS *(coming soon)*
+### 🇪🇸 Spain ENS
 
-Esquema Nacional de Seguridad covering security categories (Basic, Medium, High), mandatory measures, and compliance requirements for public administrations in Spain and their technology suppliers.
+Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 security measures, three security categories, ENS certification process, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, and NIS2.
+
+**Trigger phrases:**        
 
 ---
 
@@ -137,9 +141,12 @@ Esquema Nacional de Seguridad covering security categories (Basic, Medium, High)
 | Framework | Version | Download |
 |---|---|---|
 | 🛡️ Cyber Essentials Plus | v1.1.0 (Danzell) | [cyber-essentials-plus.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Cyber%20Essentials%20Plus%20-Claude%20Skill/cyber-essentials-plus.skill) |
-| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) 
-|
+| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
 | 🇩🇪 BSI C5 | v1.0.0 (C5:2026) | [bsi-c5.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/BSI%20C5%20-%20Claude%20Skill/bsi-c5.skill) |
+| 🤖 EU AI Act | v1.0.0 | [eu-ai-act.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill) |
+| 🔗 TISAX | v1.0.0 (ISA 6.0.3) | [tisax.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
+| 🇪🇸 Spain ENS | v1.0.0 (RD 311/2022) | [spain-ens.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Spain%20ENS%20-%20Claude%20Skill/spain-ens.skill) |
+
 ---
 
 ## Danzell Update 27 April 2026
