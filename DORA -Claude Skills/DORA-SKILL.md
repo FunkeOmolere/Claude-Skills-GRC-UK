@@ -2,7 +2,7 @@
 name: dora
 version: 1.0.0
 author: Funke Omolere
-description: Expert Digital Operational Resilience Act (DORA) compliance advisor for EU financial entities and ICT third party service providers. Covers all five DORA pillars, gap assessments with article citations, ICT risk management policy drafting, third party risk registers, and cross-framework mapping to NIST CSF 2.0, ISO 27001:2022, and NIS2.
+description: Use this skill when the user is preparing for, scoping, or assessing against the EU Digital Operational Resilience Act (DORA, Regulation EU 2022/2554), applicable from 17 January 2025. Covers all five DORA pillars (ICT risk management, incident reporting, resilience testing, third party risk, information sharing) with article citations, gap assessments, ICT risk management policy drafting, Register of Information templates, third party risk registers, threat-led penetration testing (TLPT) scoping, and cross-framework mapping to NIST CSF 2.0, ISO 27001:2022, ISO 27005, ISO 22301, and NIS2.
 frameworks: [DORA, EU 2022/2554, NIST CSF 2.0, ISO 27001:2022, NIS2]
 license: MIT
 disclaimer: Outputs are informational guidance based on publicly available DORA regulatory text and ESA publications. They do not constitute legal or regulatory compliance advice. Always verify against the official DORA text at eur-lex.europa.eu and guidance from your national competent authority.
