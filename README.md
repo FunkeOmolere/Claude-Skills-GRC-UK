@@ -57,8 +57,6 @@ This is a living library. New skills will be added as frameworks evolve.
 
 ### 🛡️ Cyber Essentials Plus
 
-**File:** `Cyber Essentials Plus - Claude Skill/cyber-essentials-plus.skill`
-
 Turns Claude into an expert Cyber Essentials and Cyber Essentials Plus compliance advisor. Fully updated for **Danzell (v3.3)** effective 27 April 2026, replacing the previous Willow question set.
 
 - Runs structured **gap assessments** across all 5 CE+ control themes with 🔴/🟡/🟢 RAG ratings
@@ -81,31 +79,35 @@ Turns Claude into an expert DORA compliance advisor for EU financial entities an
 
 ---
 
-### 🤖 EU AI Act 
+### 🤖 EU AI Act
 
-Full EU AI Act compliance advisor covering risk classification, conformity assessments, high risk AI obligations, and FRIA mapping.
+Full EU AI Act compliance advisor covering risk classification (prohibited, high risk, limited risk, minimal risk), conformity assessments, high risk AI obligations under Article 6, Fundamental Rights Impact Assessment (FRIA) mapping, general purpose AI model rules, and cross-framework alignment with ISO 42001 and NIST AI RMF.
+
+**Trigger phrases:** `EU AI Act` `AI Act` `high risk AI` `prohibited AI practices` `FRIA` `Fundamental Rights Impact Assessment` `conformity assessment` `general purpose AI` `GPAI` `AI risk classification`
 
 ---
 
 ### 🔗 TISAX
 
-Expert TISAX compliance advisor for automotive suppliers and OEM service providers. Covers all three assessment levels, VDA ISA 6.0.3 controls, ENX registration, and cross-framework mapping to ISO 27001:2022 and NIS2.
+Expert TISAX compliance advisor for automotive suppliers and OEM service providers. Covers all three assessment levels (AL1, AL2, AL3) under VDA ISA 6.0.3, the eight TISAX assessment objectives including **prototype protection** (for suppliers handling pre-series vehicles, components, or unreleased designs), data protection, and connection to third parties. Includes ENX registration, audit preparation, and cross-framework mapping to ISO 27001:2022 and NIS2.
 
-**Trigger phrases:**        
+**Trigger phrases:** `TISAX` `VDA ISA` `automotive information security` `OEM supplier assessment` `ENX portal` `assessment level` `AL1` `AL2` `AL3` `prototype protection` `pre-series vehicles` `data protection TISAX`
 
 ---
 
-### 🇩🇪 BSI C5 
+### 🇩🇪 BSI C5
 
-German Federal Office for Information Security Cloud Computing Compliance Criteria Catalogue covering the 17 topic areas, basic and additional criteria, and audit requirements for cloud providers serving regulated German markets.
+Cloud Computing Compliance Criteria Catalogue from the German Federal Office for Information Security. Covers both **C5:2020** (current audit baseline) and **C5:2026** (mandatory from 1 June 2027), supporting providers in transition planning, gap analysis, and early adoption. Includes the 17 topic areas, basic and additional criteria, and audit requirements for cloud providers serving regulated German markets.
+
+**Trigger phrases:** `BSI C5` `C5:2020` `C5:2026` `Cloud Computing Compliance Criteria` `German cloud provider` `BaFin cloud` `BSI Grundschutz` `EUCS` `cloud audit Germany`
 
 ---
 
 ### 🇪🇸 Spain ENS
 
-Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 security measures, three security categories, ENS certification process, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, and NIS2.
+Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 security measures across three security categories (Basic, Medium, High), the ENS certification process, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, and NIS2.
 
-**Trigger phrases:**        
+**Trigger phrases:** `Spain ENS` `Esquema Nacional de Seguridad` `RD 311/2022` `Royal Decree 311/2022` `ENS certification` `Spanish public administration` `ENS Basic` `ENS Medium` `ENS High` `INCIBE`
 
 ---
 
@@ -126,6 +128,12 @@ Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 secur
 | Generating a third party ICT risk register aligned to Article 28(3) | DORA |
 | Mapping DORA obligations to ISO 27001:2022 and NIST CSF 2.0 | DORA |
 | Answering a client question about major ICT incident reporting timelines | DORA |
+| Classifying an AI system under the EU AI Act risk tiers | EU AI Act |
+| Preparing a Fundamental Rights Impact Assessment for a high risk AI system | EU AI Act |
+| Determining whether prototype protection applies to your TISAX scope | TISAX |
+| Preparing for a TISAX AL3 assessment | TISAX |
+| Planning the C5:2020 to C5:2026 transition for a cloud service provider | BSI C5 |
+| Running a Spain ENS gap assessment for a public administration supplier | Spain ENS |
 
 ---
 
@@ -142,9 +150,9 @@ Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 secur
 |---|---|---|
 | 🛡️ Cyber Essentials Plus | v1.1.0 (Danzell) | [cyber-essentials-plus.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Cyber%20Essentials%20Plus%20-Claude%20Skill/cyber-essentials-plus.skill) |
 | 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
-| 🇩🇪 BSI C5 | v1.0.0 (C5:2026) | [bsi-c5.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/BSI%20C5%20-%20Claude%20Skill/bsi-c5.skill) |
 | 🤖 EU AI Act | v1.0.0 | [eu-ai-act.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill) |
 | 🔗 TISAX | v1.0.0 (ISA 6.0.3) | [tisax.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
+| 🇩🇪 BSI C5 | v1.0.0 (C5:2020 + C5:2026) | [bsi-c5.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/BSI%20C5%20-%20Claude%20Skill/bsi-c5.skill) |
 | 🇪🇸 Spain ENS | v1.0.0 (RD 311/2022) | [spain-ens.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Spain%20ENS%20-%20Claude%20Skill/spain-ens.skill) |
 
 ---
@@ -166,7 +174,7 @@ This library is updated for the **Danzell (v3.3)** scheme which comes into effec
 
 **Funke Omolere**
 GRC Professional and Engineer | Adobe
-BSides London 2025 Speaker | Most Inspiring Women in UK 2026
+BSides London 2025 Speaker | Most Inspiring Women in the UK 2026
 
 Building open source GRC tooling at the intersection of compliance, engineering, and AI.
 
@@ -191,7 +199,7 @@ Building this in public and learning as I go. All feedback welcome.
 
 The skills in this repository provide informational guidance based on publicly available regulatory and standards documentation. They do not constitute legal, audit, or professional compliance advice. Outputs should be reviewed by a qualified professional such as an IASME accredited CE+ assessor before being relied upon for formal certification purposes.
 
-Requirements evolve. Always verify against the latest official publications from the NCSC at ncsc.gov.uk and IASME at iasme.co.uk.
+Requirements evolve. Always verify against the latest official publications from the relevant regulator before relying on any output.
 
 ---
 
