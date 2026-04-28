@@ -81,7 +81,7 @@ Turns Claude into an expert DORA compliance advisor for EU financial entities an
 
 ---
 
-### 🤖 EU AI Act *(coming soon)*
+### 🤖 EU AI Act 
 
 Full EU AI Act compliance advisor covering risk classification, conformity assessments, high risk AI obligations, and FRIA mapping.
 
@@ -95,7 +95,7 @@ Expert TISAX compliance advisor for automotive suppliers and OEM service provide
 
 ---
 
-### 🇩🇪 BSI C5 *(coming soon)*
+### 🇩🇪 BSI C5 
 
 German Federal Office for Information Security Cloud Computing Compliance Criteria Catalogue covering the 17 topic areas, basic and additional criteria, and audit requirements for cloud providers serving regulated German markets.
 
@@ -174,15 +174,16 @@ Building open source GRC tooling at the intersection of compliance, engineering,
 
 ---
 
-## Help Build This
+## Feedback 🌱
 
-Found an error or outdated reference? Open a GitHub issue and include:
+Found this useful? Spotted something off? I'd love to hear from you.
 
-- The skill name
-- A description of the issue
-- The correct information with a source reference (NCSC publication, official regulatory text)
+- ⭐ **Star the repo** if it saved you time
+- 🐛 **Open an issue** if something's unclear, broken, or out of date — include the skill name, the issue, and a source reference if you have one
+- 💡 **Suggest a framework** by opening an issue with the tag `skill-request`
+- 💬 **DM me on LinkedIn** if you want to share how you're using these
 
-Want to request a new skill? Open an issue with the tag `skill-request` and describe the framework, your use case, and the audience it would serve.
+Building this in public and learning as I go. All feedback welcome.
 
 ---
 
