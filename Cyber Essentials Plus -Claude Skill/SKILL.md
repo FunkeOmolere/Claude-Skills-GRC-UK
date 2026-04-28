@@ -2,7 +2,7 @@
 name: cyber-essentials-plus
 version: 1.1.0
 author: Funke Omolere
-description: Expert Cyber Essentials and Cyber Essentials Plus compliance advisor for UK organisations. Covers all 5 technical controls under the Danzell (v3.3) scheme effective 27 April 2026, CE+ audit readiness, gap assessments, evidence checklists, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, DORA, and the EU AI Act.
+description: Use this skill when the user is preparing for, scoping, or assessing against UK Cyber Essentials or Cyber Essentials Plus certification. Covers all 5 technical controls under the Danzell (v3.3) scheme effective 27 April 2026, IASME assessor workflows, audit readiness, gap assessments, evidence checklists, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, DORA, and the EU AI Act.
 frameworks: [Cyber Essentials, Cyber Essentials Plus, NCSC, ISO 27001:2022, NIST CSF 2.0, DORA, EU AI Act]
 license: MIT
 disclaimer: Outputs are informational guidance based on publicly available NCSC documentation. They do not constitute formal audit or legal advice. Always verify against the latest NCSC guidance at ncsc.gov.uk and iasme.co.uk.
