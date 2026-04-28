@@ -4,7 +4,7 @@ Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TIS
 
 ![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Skills 2 of 6](https://img.shields.io/badge/Skills-2%20of%206-green.svg)
+![Skills 6 Live](https://img.shields.io/badge/Skills-6%20Live-brightgreen.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
 ![Danzell Ready](https://img.shields.io/badge/Cyber%20Essentials-Danzell%20Ready-purple.svg)
 
@@ -26,11 +26,11 @@ Once installed, a skill activates **automatically** when your conversation touch
 
 ## Built For
 
-These skills are built for professionals working in UK information security, privacy, and regulatory compliance. Whether at organisations seeking certification, security engineers building compliant systems, or GRC consultants supporting clients.
+These skills are built for professionals working in UK and European information security, privacy, and regulatory compliance. Whether at organisations seeking certification, security engineers building compliant systems, or GRC consultants supporting clients.
 
 **Security and Compliance Teams** use these skills to accelerate gap assessments, generate first draft evidence checklists, map controls across frameworks, and prepare for certification. Compressing weeks of reference work into minutes.
 
-**GRC Engineers and Analysts** use them to understand what controls their systems must implement, get NCSC cited answers to compliance questions, and produce audit ready documentation tied to specific requirements.
+**GRC Engineers and Analysts** use them to understand what controls their systems must implement, get regulator cited answers to compliance questions, and produce audit ready documentation tied to specific requirements.
 
 **Consultants and Advisors** use them to draft regulatory documents, answer client questions with precise citations, and stay current on framework changes like the Danzell update.
 
