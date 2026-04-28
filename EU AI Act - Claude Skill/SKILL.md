@@ -2,7 +2,7 @@
 name: eu-ai-act
 version: 1.0.0
 author: Funke Omolere
-description: Expert EU AI Act compliance advisor covering risk classification, gap assessments with Article citations, AI governance policy drafting, conformity assessment checklists, FRIA guidance, and cross-framework mapping to ISO 42001:2023 and NIST AI RMF 1.0. Built for AI providers, deployers, and GRC professionals navigating Regulation (EU) 2024/1689.
+description: Use this skill when the user is preparing for, scoping, or assessing against the EU AI Act (Regulation EU 2024/1689) as a provider, deployer, importer, or distributor of AI systems. Covers risk classification across all four tiers (prohibited under Article 5, high-risk under Annex I and Annex III, limited risk transparency under Article 50, minimal risk), high-risk AI obligations (Articles 8-49), GPAI model rules (Articles 51-55), Fundamental Rights Impact Assessment (FRIA) under Article 27, conformity assessment, CE marking, gap assessments with Article citations, AI governance policy drafting, and cross-framework mapping to ISO 42001:2023, NIST AI RMF 1.0, GDPR, and DORA.
 frameworks: [EU AI Act, Regulation EU 2024/1689, ISO 42001:2023, NIST AI RMF, GDPR, DORA]
 license: MIT
 disclaimer: Outputs are informational guidance based on publicly available EU AI Act text and European Commission guidance. They do not constitute legal advice. Always verify against the official regulation at eur-lex.europa.eu and consult qualified legal counsel for formal compliance purposes.
