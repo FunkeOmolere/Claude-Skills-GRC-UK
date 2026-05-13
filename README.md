@@ -2,7 +2,7 @@
 
 Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TISAX, BSI C5, Spain ENS, and more. Built for UK and European GRC professionals and powered by Claude Skills.
 
-![Release v1.1.0](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
+![Release v1.1.1](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Skills 6 Live](https://img.shields.io/badge/Skills-6%20Live-brightgreen.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
@@ -143,6 +143,11 @@ Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 secur
 2. Open Claude and go to **Customize then Skills**
 3. Click **Upload Skill** and select the `.skill` file
 4. Start a new conversation. Claude will automatically apply the skill when relevant topics come up
+
+Note: The .skill format is native to Claude. For ChatGPT or Copilot, 
+copy the contents of the SKILL.md file and paste it into Custom 
+Instructions or your agent system prompt. The knowledge works across 
+tools — the format adapts.
 
 **Tip:** You can install multiple skills at once. Claude will activate whichever is most relevant to each question.
 
