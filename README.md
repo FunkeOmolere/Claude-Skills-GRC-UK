@@ -2,7 +2,7 @@
 
 Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TISAX, BSI C5, Spain ENS, and more. Built for UK and European GRC professionals and powered by Claude Skills.
 
-![Release v1.1.1](https://img.shields.io/badge/Release-v1.1.1-brightgreen.svg)
+![Release v1.2.0](https://img.shields.io/badge/Release-v1.2.0-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Skills 6 Live](https://img.shields.io/badge/Skills-6%20Live-brightgreen.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
@@ -187,7 +187,7 @@ Building open source GRC tooling at the intersection of compliance, engineering,
 
 ---
 
-## Feedback 🌱
+## Feedback 
 
 Found this useful? Spotted something off? I'd love to hear from you.
 
