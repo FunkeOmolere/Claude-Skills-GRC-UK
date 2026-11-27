@@ -2,7 +2,7 @@
 
 Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TISAX, BSI C5, Spain ENS, and more. Built for UK and European GRC professionals and powered by Claude Skills.
 
-![Release v1.1.1](https://img.shields.io/badge/Release-v1.1.0-brightgreen.svg)
+![Release v1.1.1](https://img.shields.io/badge/Release-v1.1.1-brightgreen.svg)
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Skills 6 Live](https://img.shields.io/badge/Skills-6%20Live-brightgreen.svg)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)
@@ -12,7 +12,7 @@ Expert level compliance guidance for Cyber Essentials Plus, DORA, EU AI Act, TIS
 
 ## How It Works
 
-Claude Skills are installable knowledge packages that extend Claude's capabilities for specific domains. A skill is a `.skill` file, a bundled archive containing a `SKILL.md` instruction file, that you upload to Claude once and use across all your conversations.
+Claude Skills are installable knowledge packages that extend Claude's capabilities for specific domains. A skill is a ZIP file containing a folder with a `SKILL.md` instruction file, that you upload to Claude once and use across all your conversations.
 
 Once installed, a skill activates **automatically** when your conversation touches its topic area. You do not need to invoke it by name or use special commands. Claude simply becomes a deeper expert in that domain for the duration of your session.
 
@@ -49,7 +49,7 @@ Most Claude Skills libraries focus on US frameworks like SOC 2, FedRAMP, and HIP
 - **BSI C5** is the German Federal Office for Information Security cloud compliance catalogue for providers serving regulated German markets
 - **Spain ENS** (Esquema Nacional de Seguridad) is mandatory for public administrations in Spain and their technology suppliers
 
-This is a living library. New skills will be added as frameworks evolve.
+This is a living library. New skills will be added as frameworks evolve. **Coming soon:** EU Cyber Resilience Act (CRA).
 
 ---
 
@@ -81,7 +81,7 @@ Turns Claude into an expert DORA compliance advisor for EU financial entities an
 
 ### 🤖 EU AI Act
 
-Full EU AI Act compliance advisor covering risk classification (prohibited, high risk, limited risk, minimal risk), conformity assessments, high risk AI obligations under Article 6, Fundamental Rights Impact Assessment (FRIA) mapping, general purpose AI model rules, and cross-framework alignment with ISO 42001 and NIST AI RMF.
+Full EU AI Act compliance advisor, updated for the final **Digital Omnibus on AI** (Regulation (EU) 2026/1744, in force 27 July 2026) including the new high-risk deadlines and prohibitions. Covers risk classification (prohibited, high risk, limited risk, minimal risk), conformity assessments, high risk AI obligations under Article 6, Fundamental Rights Impact Assessment (FRIA) mapping, general purpose AI model rules, and cross-framework alignment with ISO 42001 and NIST AI RMF.
 
 **Trigger phrases:** `EU AI Act` `AI Act` `high risk AI` `prohibited AI practices` `FRIA` `Fundamental Rights Impact Assessment` `conformity assessment` `general purpose AI` `GPAI` `AI risk classification`
 
@@ -89,9 +89,9 @@ Full EU AI Act compliance advisor covering risk classification (prohibited, high
 
 ### 🔗 TISAX
 
-Expert TISAX compliance advisor for automotive suppliers and OEM service providers. Covers all three assessment levels (AL1, AL2, AL3) under VDA ISA 6.0.3, the eight TISAX assessment objectives including **prototype protection** (for suppliers handling pre-series vehicles, components, or unreleased designs), data protection, and connection to third parties. Includes ENX registration, audit preparation, and cross-framework mapping to ISO 27001:2022 and NIS2.
+Expert TISAX compliance advisor for automotive suppliers and OEM service providers. Covers all three assessment levels (AL1, AL2, AL3) under VDA ISA 6.0.3 and the **ISA2027** transition (default for new assessments from 1 January 2027), the TISAX labels for information security, availability, **prototype protection** (for suppliers handling prototype parts, vehicles, test vehicles, or events), and data protection. Includes ENX registration, audit preparation, and cross-framework mapping to ISO 27001:2022 and NIS2.
 
-**Trigger phrases:** `TISAX` `VDA ISA` `automotive information security` `OEM supplier assessment` `ENX portal` `assessment level` `AL1` `AL2` `AL3` `prototype protection` `pre-series vehicles` `data protection TISAX`
+**Trigger phrases:** `TISAX` `VDA ISA` `automotive information security` `OEM supplier assessment` `ENX portal` `assessment level` `AL1` `AL2` `AL3` `prototype protection` `pre-series vehicles` `data protection TISAX` `ISA2027`
 
 ---
 
@@ -139,12 +139,12 @@ Expert Spain ENS compliance advisor covering Royal Decree 311/2022, all 73 secur
 
 ## Get Started
 
-1. Download the `.skill` file from the table below
-2. Open Claude and go to **Customize then Skills**
-3. Click **Upload Skill** and select the `.skill` file
-4. Start a new conversation. Claude will automatically apply the skill when relevant topics come up
+1. Download the ZIP file for a skill from the table below. Keep it zipped.
+2. In Claude, make sure **Code execution and file creation** is on (Settings > Capabilities).
+3. Go to **Customize > Skills**, click **+**, choose **Create skill**, then **Upload a skill**, and select the ZIP.
+4. Start a new conversation. Claude will automatically apply the skill when relevant topics come up.
 
-Note: The .skill format is native to Claude. For ChatGPT or Copilot, 
+Note: Each ZIP contains a folder with a `SKILL.md` file. For ChatGPT or Copilot, 
 copy the contents of the SKILL.md file and paste it into Custom 
 Instructions or your agent system prompt. The knowledge works across 
 tools — the format adapts.
@@ -153,18 +153,18 @@ tools — the format adapts.
 
 | Framework | Version | Download |
 |---|---|---|
-| 🛡️ Cyber Essentials Plus | v1.1.0 (Danzell) | [cyber-essentials-plus.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Cyber%20Essentials%20Plus%20-Claude%20Skill/cyber-essentials-plus.skill) |
-| 🏦 DORA | v1.0.0 | [dora.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
-| 🤖 EU AI Act | v1.0.0 | [eu-ai-act.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill) |
-| 🔗 TISAX | v1.0.0 (ISA 6.0.3) | [tisax.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
-| 🇩🇪 BSI C5 | v1.0.0 (C5:2020 + C5:2026) | [bsi-c5.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/BSI%20C5%20-%20Claude%20Skill/bsi-c5.skill) |
-| 🇪🇸 Spain ENS | v1.0.0 (RD 311/2022) | [spain-ens.skill](https://github.com/FunkeOmolere/Claude-Skills-GRC-UK/raw/main/Spain%20ENS%20-%20Claude%20Skill/spain-ens.skill) |
+| 🛡️ Cyber Essentials Plus | v1.1.1 (Danzell) | [cyber-essentials-plus.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/cyber-essentials-plus.zip) |
+| 🏦 DORA | v1.0.1 | [dora.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/dora.zip) |
+| 🤖 EU AI Act | v1.1.0 (Digital Omnibus final text) | [eu-ai-act.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/eu-ai-act.zip) |
+| 🔗 TISAX | v1.1.0 (ISA 6.0.3 + ISA2027) | [tisax.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/tisax.zip) |
+| 🇩🇪 BSI C5 | v1.0.1 (C5:2020 + C5:2026) | [bsi-c5.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/bsi-c5.zip) |
+| 🇪🇸 Spain ENS | v1.0.0 (RD 311/2022) | [spain-ens.zip](https://funkeomolere.github.io/Claude-Skills-GRC-UK/downloads/spain-ens.zip) |
 
 ---
 
 ## Danzell Update 27 April 2026
 
-This library is updated for the **Danzell (v3.3)** scheme which comes into effect 27 April 2026. Key changes reflected in the CE+ skill:
+This library is updated for the **Danzell (v3.3)** scheme, in effect since 27 April 2026. Key changes reflected in the CE+ skill:
 
 - MFA on cloud services is now an **automatic fail** if not enabled where available
 - 14 day patching for OS, firmware, and applications is now an **automatic fail** (questions A6.4 and A6.5)
@@ -179,7 +179,7 @@ This library is updated for the **Danzell (v3.3)** scheme which comes into effec
 
 **Funke Omolere**
 GRC Professional and Engineer | Adobe
-BSides London 2025 Speaker | Most Inspiring Women in the UK 2026
+BSides London 2025 Speaker | Most Inspiring Women in Cyber 2026 | TechWomen100 2026
 
 Building open source GRC tooling at the intersection of compliance, engineering, and AI.
 
