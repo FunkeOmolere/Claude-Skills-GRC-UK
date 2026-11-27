@@ -1,11 +1,12 @@
 ---
 name: spain-ens
-version: 1.0.0
-author: Funke Omolere
 description: Use this skill when the user is preparing for, scoping, or assessing against Spain's Esquema Nacional de Seguridad (ENS) under Royal Decree 311/2022. Covers all three security categories (Basic, Medium, High), all 73 security measures across organisational, operational, and protective control families, ENS certification process by ENAC-accredited bodies, the May 2025 mandatory certification deadline for Medium and High systems, CCN-STIC guidance, gap assessments with measure citations, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, NIS2, and GDPR. Built for Spanish public administrations, technology providers to the Spanish public sector, and GRC consultants.
-frameworks: [Spain ENS, Royal Decree 311/2022, ISO 27001:2022, NIST CSF 2.0, NIS2, GDPR]
 license: MIT
-disclaimer: Outputs are informational guidance based on publicly available ENS regulatory text and CCN-STIC guides. They do not constitute legal or audit advice. Always verify against the latest official Royal Decree 311/2022 text and CCN-STIC guidance at ccn-cert.cni.es and ens.ccn.cni.es.
+metadata:
+  version: 1.0.0
+  author: Funke Omolere
+  frameworks: '[Spain ENS, Royal Decree 311/2022, ISO 27001:2022, NIST CSF 2.0, NIS2, GDPR]'
+  disclaimer: Outputs are informational guidance based on publicly available ENS regulatory text and CCN-STIC guides. They do not constitute legal or audit advice. Always verify against the latest official Royal Decree 311/2022 text and CCN-STIC guidance at ccn-cert.cni.es and ens.ccn.cni.es.
 ---
 
 # Spain ENS Esquema Nacional de Seguridad — Claude Skill

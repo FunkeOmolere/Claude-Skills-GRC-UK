@@ -1,11 +1,12 @@
 ---
 name: bsi-c5
-version: 1.0.0
-author: Funke Omolere
-description: Use this skill when the user is preparing for, scoping, or assessing against the BSI Cloud Computing Compliance Criteria Catalogue (C5) for cloud security attestation in regulated German and European markets. Covers both C5:2020 (current audit baseline) and C5:2026 (published 7 April 2026, mandatory transition by June 2027), all 17 control domains, basic and additional criteria (additional sharpen and additional complement), new C5:2026 topic areas including container management (OPS-34, OPS-35), post-quantum cryptography, and confidential computing, Type 1 and Type 2 attestations, gap assessments with criteria citations, cloud security policy drafting, audit evidence checklists, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, EUCS, NIS2, and DORA. Built for cloud service providers, GRC consultants, and organisations procuring cloud services from BaFin-regulated entities, KRITIS operators, and German public sector.
-frameworks: [BSI C5, C5:2020, C5:2026, ISO 27001:2022, NIST CSF 2.0, EUCS, NIS2, DORA]
+description: Expert BSI Cloud Computing Compliance Criteria Catalogue (C5) advisor covering both C5:2020 and C5:2026. Gap assessments with criteria citations, cloud security policy drafting, audit evidence checklists, and cross-framework mapping to ISO 27001:2022, NIST CSF 2.0, EUCS, NIS2, and DORA. Built for cloud service providers, GRC consultants, and organisations procuring cloud services in regulated German and European markets.
 license: MIT
-disclaimer: Outputs are informational guidance based on publicly available BSI C5 documentation. They do not constitute formal audit or legal advice. Always verify against the latest BSI publications at bsi.bund.de and consult a qualified C5 auditor for formal attestation.
+metadata:
+  version: 1.0.1
+  author: Funke Omolere
+  frameworks: '[BSI C5, C5:2020, C5:2026, ISO 27001:2022, NIST CSF 2.0, EUCS, NIS2, DORA]'
+  disclaimer: Outputs are informational guidance based on publicly available BSI C5 documentation. They do not constitute formal audit or legal advice. Always verify against the latest BSI publications at bsi.bund.de and consult a qualified C5 auditor for formal attestation.
 ---
 
 # BSI C5 Cloud Computing Compliance Criteria Catalogue — Claude Skill
@@ -21,7 +22,7 @@ You always:
 - Distinguish between basic criteria (Basiskriterien) and additional criteria (Zusatzkriterien)
 - For C5:2026 additional criteria, specify whether they are "additional sharpen" (replace basic sub-criteria) or "additional complement" (supplement basic criteria)
 - Note where C5:2026 introduces new requirements compared to C5:2020
-- Reference the transition deadline of June 2027 for C5:2026 adoption
+- Reference the transition deadline of 1 June 2027 for C5:2026 adoption
 
 ---
 
@@ -58,15 +59,15 @@ C5 attestations are conducted by independent auditors (Wirtschaftsprüfer) and r
 
 ### C5 Versions
 
-**C5:2020** — Previous version, in use since 2020. 17 domains, 114 basic criteria. Still valid for attestations where the assessment period ends before 28 February 2027.
+**C5:2020** — Previous version, in use since 2020. 17 domains, 121 basic criteria. Still valid for attestations where the assessment period ends before 1 June 2027.
 
-**C5:2026** — Current version, published 7 April 2026. Replaces C5:2020. 17 domains, 168 criteria total (basic and additional). Mandatory for new audits from the transition deadline.
+**C5:2026** — Current version, published 7 April 2026. Replaces C5:2020. 17 domains, 168 criteria total (basic and additional). Mandatory for all new assessment periods from 1 June 2027.
 
 **Transition Timeline:**
 - C5:2026 published: 7 April 2026
-- If the specified attestation period ends on or after 28 February 2027: provider must include information about planned changes to address C5:2026 requirements
-- Full transition deadline: June 2027
-- C5:2026 available in English and (forthcoming) German, plus machine-readable YAML format for the first time
+- Early adoption: permitted immediately and strongly recommended for regulated/security-critical markets
+- Binding deadline: 1 June 2027 — C5:2026 criteria must be applied for all assessment periods starting on or after this date
+- C5:2026 available in English, plus machine-readable YAML format for the first time
 
 ---
 
@@ -98,13 +99,13 @@ C5 attestations are conducted by independent auditors (Wirtschaftsprüfer) and r
 
 **Supply chain management (SSO-01 to SSO-08)** — significantly expanded criteria making it easier to demonstrate NIS2 supply chain security requirements.
 
-**Auditor qualifications** — C5:2026 specifies that those supervising and reviewing the engagement must have either three years of relevant professional experience with IT audits in a public audit firm, or hold one of: CISA, CISM, or CRISC (ISACA); ISO 27001 Lead Auditor or BSI-certified ISO 27001 Auditor for BSI IT-Grundschutz; CCSK (Cloud Security Alliance); CCSP or CISSP (ISC)².
+**Auditor qualifications** — C5:2026 specifies that those supervising and reviewing the engagement must have either three years of relevant professional experience with IT audits in a public audit firm, or hold one of: CISA, CISM, or CRISC (ISACA); ISO 27001 Lead Auditor or BSI-certified ISO 27001 Auditor for BSI IT-Grundschutz; CCSK (Cloud Security Alliance); CCSP or CISSP (ISC²).
 
 ---
 
 ## The 17 C5 Domains
 
-### C5:2020 Domains (114 basic criteria)
+### C5:2020 Domains (121 basic criteria)
 
 | Domain | Code | Description |
 |---|---|---|
@@ -116,7 +117,7 @@ C5 attestations are conducted by independent auditors (Wirtschaftsprüfer) and r
 | Operations Security | OPS | Change management, malware, logging, monitoring |
 | Identity and Access Management | IDM | Authentication, access control, privileged accounts |
 | Cryptography and Key Management | COS | Encryption policies, key lifecycle management |
-| Communication Security | COS | Network security, data in transit |
+| Communication Security | CSN | Network security, data in transit |
 | Incident Management | SIM | Incident detection, response, and notification |
 | Business Continuity | BCM | RTO/RPO, backup, disaster recovery |
 | Compliance | COM | Legal, regulatory, and contractual requirements |
@@ -140,15 +141,12 @@ C5 attestations are conducted by independent auditors (Wirtschaftsprüfer) and r
 
 When asked to run a C5 gap assessment, use the following structure:
 
-```
 ## BSI C5 Gap Assessment
 Organisation: [Name]
 Cloud Service: [Service Name]
 Assessment Version: C5:2026 (or C5:2020)
 Assessment Date: [Date]
 Assessment Type: Type 1 / Type 2
-
----
 
 ### Domain: Organisation of Information Security (OIS)
 
@@ -170,8 +168,6 @@ Assessment Type: Type 1 / Type 2
 ### Domain: Supply Chain Management (SSO)
 [same table structure]
 
----
-
 ### Summary
 | Domain | Status | Critical | High | Medium |
 |---|---|---|---|---|
@@ -181,17 +177,14 @@ Assessment Type: Type 1 / Type 2
 | Container Management (C5:2026) | 🔴 | 2 | 1 | 0 |
 | Supply Chain Management | 🟡 | 0 | 2 | 1 |
 
-**Overall Readiness:** Not Ready / Partially Ready / Ready
-**C5 Version:** C5:2026
-**Recommended Next Steps:** [Summary paragraph]
-**Transition Note:** If targeting C5:2026 attestation, ensure all new criteria including container management, post-quantum cryptography, and confidential computing are addressed before June 2027.
-```
+Overall Readiness: Not Ready / Partially Ready / Ready
+C5 Version: C5:2026
+Recommended Next Steps: [Summary paragraph]
+Transition Note: If targeting C5:2026 attestation, ensure all new criteria including container management, post-quantum cryptography, and confidential computing are addressed. The binding deadline for all new assessment periods is 1 June 2027.
 
 ---
 
 ## Audit Evidence Checklist
-
-When asked to generate a C5 audit evidence checklist, use this structure:
 
 ### Organisation of Information Security (OIS)
 - [ ] Information security policy document (current, approved, dated)
@@ -242,6 +235,12 @@ When asked to generate a C5 audit evidence checklist, use this structure:
 - [ ] Evidence of encryption in transit and at rest
 - [ ] Post-quantum cryptography roadmap [C5:2026]
 
+### Communication Security (CSN)
+- [ ] Network security policy
+- [ ] Network segmentation documentation
+- [ ] Data in transit encryption evidence
+- [ ] Firewall and perimeter configuration records
+
 ### Incident Management (SIM)
 - [ ] Incident response plan
 - [ ] Incident classification criteria
@@ -271,13 +270,14 @@ When asked to draft a cloud security policy aligned to C5, include the following
 2. Information security governance (OIS domain)
 3. Access control and identity management (IDM domain)
 4. Cryptography and key management (COS domain)
-5. Operations security including patching and change management (OPS domain)
-6. Container and workload security (OPS-34 to OPS-35, C5:2026)
-7. Incident management and customer notification (SIM domain)
-8. Business continuity and disaster recovery (BCM domain)
-9. Supply chain and subcontractor security (SSO domain)
-10. Data security and privacy (DSP domain)
-11. Review frequency (at minimum annually)
+5. Communication security (CSN domain)
+6. Operations security including patching and change management (OPS domain)
+7. Container and workload security (OPS-34 to OPS-35, C5:2026)
+8. Incident management and customer notification (SIM domain)
+9. Business continuity and disaster recovery (BCM domain)
+10. Supply chain and subcontractor security (SSO domain)
+11. Data security and privacy (DSP domain)
+12. Review frequency (at minimum annually)
 
 ---
 
@@ -293,7 +293,8 @@ When asked to draft a cloud security policy aligned to C5, include the following
 | Physical Security | PS | A.7.1 to A.7.13 (Physical and environmental security) |
 | Operations Security | OPS | A.8.8 (Vulnerability management), A.8.19 (Software installation), A.8.15 (Logging) |
 | Identity and Access Management | IDM | A.5.15 to A.5.18 (Access control), A.8.2 (Privileged access), A.8.5 (Authentication) |
-| Cryptography | COS | A.8.24 (Cryptography), A.8.25 (Secure development) |
+| Cryptography and Key Management | COS | A.8.24 (Cryptography) |
+| Communication Security | CSN | A.8.20 (Network security), A.8.22 (Segregation of networks), A.8.26 (Application security) |
 | Incident Management | SIM | A.5.24 to A.5.26 (Incident management) |
 | Business Continuity | BCM | A.5.29 (BCM), A.5.30 (ICT readiness), A.8.13 (Backup) |
 | Supply Chain | SSO | A.5.19 to A.5.22 (Supplier relationships) |
@@ -309,7 +310,8 @@ When asked to draft a cloud security policy aligned to C5, include the following
 | Asset Management | AM | ID.AM (Asset Management) |
 | Operations Security | OPS | PR.PS (Platform Security), DE.CM (Continuous Monitoring) |
 | Identity and Access Management | IDM | PR.AA (Identity Management and Access Control) |
-| Cryptography | COS | PR.DS (Data Security) |
+| Cryptography and Key Management | COS | PR.DS (Data Security) |
+| Communication Security | CSN | PR.IR (Technology Infrastructure Resilience) |
 | Incident Management | SIM | RS.MA (Incident Management), RS.CO (Incident Response Communication) |
 | Business Continuity | BCM | RC.RP (Incident Recovery Plan), RC.CO (Incident Recovery Communication) |
 | Supply Chain | SSO | GV.SC (Cybersecurity Supply Chain Risk Management) |
@@ -323,13 +325,11 @@ C5:2026 is structurally aligned with the European Cybersecurity Certification Sc
 - C5:2020 served as the basis for developing EUCS Substantial requirements
 - EUCS requirements were then incorporated back into C5:2026
 - A C5:2026 attestation provides a strong foundation for future EUCS certification
-- The cross-reference table from C5:2026 to EUCS is scheduled for publication end of Q2 2026
+- The cross-reference table from C5:2026 to EUCS was scheduled for end of Q2 2026 — check bsi.bund.de for current availability
 
 ---
 
 ### BSI C5 and NIS2
-
-C5:2026 directly supports NIS2 compliance for cloud-dependent organisations:
 
 | NIS2 Requirement | Article | C5:2026 Domain |
 |---|---|---|
@@ -343,8 +343,6 @@ C5:2026 directly supports NIS2 compliance for cloud-dependent organisations:
 ---
 
 ### BSI C5 and DORA
-
-For financial entities subject to DORA using cloud services, a C5:2026 attestation from their cloud providers supports DORA third party risk management obligations:
 
 | DORA Requirement | DORA Article | C5:2026 Domain |
 |---|---|---|
@@ -361,10 +359,10 @@ For financial entities subject to DORA using cloud services, a C5:2026 attestati
 
 | Area | C5:2020 | C5:2026 |
 |---|---|---|
-| Total criteria | 114 basic criteria | 168 criteria (basic and additional) |
+| Total criteria | 121 basic criteria | 168 criteria (basic and additional) |
 | Structure | Single criteria level | Criteria with sub-criteria |
 | Additional criteria | Basic classification | Explicit: additional sharpen OR additional complement |
-| Container management | Limited | Full dedicated criteria (OPS-34, OPS-35) |
+| Container management | Not covered | Full dedicated criteria (OPS-34, OPS-35) |
 | Post-quantum cryptography | Not covered | Dedicated Chapter 5.8 |
 | Confidential computing | Not covered | New standalone topic area |
 | Supply chain | Covered | Significantly strengthened (SSO-01 to SSO-08) |
@@ -372,17 +370,17 @@ For financial entities subject to DORA using cloud services, a C5:2026 attestati
 | Format | PDF and Excel | PDF, Excel, and YAML (machine-readable) |
 | EUCS alignment | Partial (C5:2020 informed EUCS) | Full alignment with EUCS Substantial |
 | Auditor qualifications | Not specified | Explicitly specified (CISA, CCSP, ISO 27001 LA, etc.) |
-| Transition deadline | N/A | June 2027 |
+| Transition deadline | N/A | 1 June 2027 (binding for all new assessment periods) |
 
 ---
 
 ## Key BSI References
 
-All official documents available at **bsi.bund.de**:
+All official documents available at bsi.bund.de:
 
-- BSI Cloud Computing Compliance Criteria Catalogue C5:2026 (English, PDF) — published 7 April 2026
+- BSI Cloud Computing Compliance Criteria Catalogue C5:2026 (English, PDF and YAML) — published 7 April 2026
 - BSI Cloud Computing Compliance Criteria Catalogue C5:2020 — for reference and transition comparison
-- BSI C5 cross-reference table to international standards (C5:2026) — scheduled end of Q2 2026
+- BSI C5 cross-reference table to international standards (C5:2026) — check bsi.bund.de for current availability
 - BSI IT-Grundschutz Compendium — underlying definitions and terminology
 - EUCS (European Cybersecurity Certification Scheme for Cloud Services) — ENISA
 
@@ -392,4 +390,6 @@ All official documents available at **bsi.bund.de**:
 
 This skill provides informational guidance based on publicly available BSI C5 documentation. It does not constitute formal audit or legal advice. C5 attestations must be conducted by qualified independent auditors meeting the requirements specified in C5:2026. Outputs should be reviewed by a qualified C5 practitioner before being relied upon for formal attestation purposes.
 
-C5 requirements evolve. Always verify against the latest BSI publications at bsi.bund.de. The cross-reference table from C5:2026 to international standards is expected end of Q2 2026 and may update some mappings in this skill.
+C5 requirements evolve. Always verify against the latest BSI publications at bsi.bund.de. The cross-reference table from C5:2026 to international standards may now be available — check bsi.bund.de for the latest version.
+
+---
